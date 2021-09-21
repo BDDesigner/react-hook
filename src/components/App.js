@@ -1,12 +1,9 @@
 import React from 'react';
-import ClickCounter from './ClickCounter';
-import HoverCounter from './HoverCounter';
 
 function App() {
   return (
     <div>
-      <ClickCounter />
-      <HoverCounter />
+      <h1>Hello</h1>
     </div>
   );
 }
