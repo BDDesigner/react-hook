@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function ClickCounter({count, incrementCount}) {
+function ClickCounter() {
+    const [count, setCount] = useState(0);
+
+    const increment = ()=>{
+        setCount(count + 1);
+    }
+
     return (
         <div>
-            <h1>Count: {count}</h1>
-            <button type="button" onClick={incrementCount}>Click</button>
+            <p>Count: {count}</p>
+            <button type="button" onClick={increment}>Count</button>
         </div>
     )
 }

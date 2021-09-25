@@ -1,14 +1,16 @@
-import React from 'react';
-import ClickCounter from './ClickCounter';
-import Counter from './Counter';
-import HoverCounter from './HoverCounter';
+import React from "react";
+import ClickCounter from "./ClickCounter";
+import Text from "./Text";
 
+const Country = React.createContext('Bangladesh');
 
 function App() {
   return (
     <div>
-      <Counter render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
-      <Counter render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />
+      <Country.Provider value="a">
+        <ClickCounter />
+        <Text />
+      </Country.Provider>
     </div>
   );
 }
