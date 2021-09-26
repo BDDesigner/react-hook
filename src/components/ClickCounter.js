@@ -3,8 +3,7 @@ import React from 'react'
 function ClickCounter({count, incrementCount}) {
     return (
         <div>
-            <h1>Count: {count}</h1>
-            <button type="button" onClick={incrementCount}>Click</button>
+            <h1 onClick={incrementCount}>Click: {count} Times</h1>
         </div>
     )
 }

@@ -3,8 +3,7 @@ import React from 'react'
 function HoverCounter({count, incrementCount}) {
     return (
         <div>
-            <h1>Count: {count}</h1>
-            <button type="button" onMouseOver={incrementCount}>Hover</button>
+            <h1 onMouseOver={incrementCount}>Hover: {count} Times</h1>
         </div>
     )
 }
