@@ -1,3 +1,4 @@
+import ThemeContext from "../contexts/ThemeContext";
 import ClickCounter from "./ClickCounter";
 import Counter from "./Counter";
 import Section from "./Section";
@@ -14,7 +15,9 @@ function App() {
           )}
         </Counter>
 
-        <Section theme={theme}/>
+        <ThemeContext.Provider value={{theme:theme}}>
+          <Section />
+        </ThemeContext.Provider>
       </div>
   );
 }
