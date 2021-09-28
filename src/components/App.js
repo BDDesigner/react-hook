@@ -4,7 +4,7 @@ import Counter from "./Counter";
 import Section from "./Section";
 
 function App() {
-  const theme = 'dark';
+  const theme = 'light';
 
   return (
       <div>
