@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Text() {
+const Poti = () => {
     return (
         <div>
-            <h1>Abdul Majed</h1>
+            <h1>Poti Component</h1>
         </div>
     )
 }
 
-export default Text
+export default Poti

@@ -1,18 +1,29 @@
-import React from "react";
-import ClickCounter from "./ClickCounter";
-import Text from "./Text";
+import React from 'react'
+import DataProvider from '../contexts/DataProvider';
+import Dada from './Dada';
+import Nati from './Nati';
+import Poti from './Poti';
 
-const Country = React.createContext('Bangladesh');
+const App = () => {
 
-function App() {
+  const msg ={
+    dada: {
+      phone: '01761334863',
+      address: 'Rangpur'
+    },
+    nati: '02',
+    poti: '03'
+  }
+
   return (
     <div>
-      <Country.Provider value="a">
-        <ClickCounter />
-        <Text />
-      </Country.Provider>
+      <DataProvider.Provider value={msg}>
+        <Dada />
+        <Nati />
+        <Poti />
+      </DataProvider.Provider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
