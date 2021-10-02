@@ -1,11 +1,12 @@
-import React from 'react'
-import Mycomponent from './Mycomponent'
+import React from 'react';
+import '../App.css';
+import Time from './Time';
 
 const App = () => {
 
   return (
-    <div>
-      <Mycomponent />
+    <div className="App">
+      <Time />
     </div>
   )
 }
