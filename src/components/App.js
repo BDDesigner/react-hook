@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
-import Time from './Time';
+import CounterOne from './CounterOne';
 
 const App = () => {
 
   return (
     <div className="App">
-      <Time />
+      <CounterOne />
     </div>
   )
 }

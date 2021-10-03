@@ -1,8 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.App{
-    margin: 50px auto;
-    width: 50%;
+.App {
+  width: 800px;
+  background: #ddd;
+  margin: auto;
+  min-height: 500px;
+  padding: 35px;
+}
+button {
+  width: 130px;
+  padding: 15px;
+  margin: 0 15px 15px 0;
 }
