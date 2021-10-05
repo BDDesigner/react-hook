@@ -1,14 +1,12 @@
-import React from 'react';
-import '../App.css';
-import CounterOne from './CounterOne';
+import React from 'react'
+import GetPost from './GetPost'
 
 const App = () => {
-
-  return (
-    <div className="App">
-      <CounterOne />
-    </div>
-  )
+    return (
+        <div>
+            <GetPost />
+        </div>
+    )
 }
 
 export default App

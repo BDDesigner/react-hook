@@ -27,6 +27,7 @@ const CounterOne = () => {
             <h2>Count- { count }</h2>
             <button type="button" onClick={() => dispatch('Increment')} >Increment</button>
             <button type="button" onClick={() => dispatch('Decrement')}>Decrement</button>
+            
             <h2>Count2- { count2 }</h2>
             <button type="button" onClick={() => dispatch2('Increment5')} >Increment by 5</button>
             <button type="button" onClick={() => dispatch2('Decrement5')}>Decrement by 5</button>
