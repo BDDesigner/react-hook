@@ -1,10 +1,10 @@
 import React from 'react'
-import GetPost from './GetPost'
+import LayoutTwo from './LayoutTwo'
 
 const App = () => {
     return (
-        <div>
-            <GetPost />
+        <div className="App">
+            <LayoutTwo />
         </div>
     )
 }
