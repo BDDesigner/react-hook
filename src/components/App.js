@@ -1,28 +1,34 @@
 import React from 'react'
-import DataProvider from '../contexts/DataProvider';
-import Dada from './Dada';
-import Nati from './Nati';
-import Poti from './Poti';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import AppState from '../contexts/AppState'
+import About from './About'
+import Home from './Home'
+
 
 const App = () => {
 
-  const msg ={
-    dada: {
-      phone: '01761334863',
-      address: 'Rangpur'
-    },
-    nati: '02',
-    poti: '03'
-  }
-
   return (
-    <div>
-      <DataProvider.Provider value={msg}>
-        <Dada />
-        <Nati />
-        <Poti />
-      </DataProvider.Provider>
-    </div>
+    <>
+      <h1>Context Api Example</h1>
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+        <AppState>
+          <Switch>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </AppState>
+      </Router>
+    </>
   )
 }
 
